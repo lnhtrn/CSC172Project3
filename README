@@ -1,0 +1,53 @@
+Author/Name: Linh Tran - ltran18@u.rochester.edu
+Partner Name: Sungwon Yoon - syoon19@u.rochester.edu
+
+Project Overview: how to halt the spread of a disease. If we have a 
+network, a graph, in which we have humans connected to other humans to
+whom they may spread the disease, we can fight a pandemic if we detect 
+those persons that we should vaccinate or isolate to minimize contagion.
+
+Lab desc: this project is for the CSC 172 class. Its main goal is to 
+read + build a graph from a text file, and depending on the command, 
+remove nodes accordingly from the graph.
+
+STOPCONTAGION CLASS:
+
+Steps:
+1. set up graph class to build graph
+2. set up adjacency list
+3. set up degree methods to calculate max degrees + remove them
+accordingly for "-d" arg
+4. set up collective influence methods for "-r" arg
+5. main method to run code
+
+To run the code, user needs to type in the terminal either:
+1. "-d" to remove nodes by degree;
+2. "-r" to remove nodes via collective influence (via default or
+user-inputted radius);
+3. "-d" & "-r" will remove nodes by degree;
+4. if no "-d" / "-r" args are given, then nodes will be auto removed
+via collective influence.
+
+The last 2 arguments the user needs to type in are the number of
+nodes they want to remove + the file.
+
+The standard input files are destruction_example_1.txt +
+destruction_example_2.txt.
+
+*********************************************************************
+
+GRAPHICS CLASS:
+
+Steps:
+1. set up node class to store x+y coords of each node
+2. set up edge class to have edge b/w nodes
+3. set up paint method to scan file + draw nodes+edges accordingly
+4. set up another class to test graphics/set up panel
+
+To run the code, user needs to type in "-t" followed by the file
+they want to see drawn.
+
+EX) java StopContagion -t destruction_example_1.txt
+
+**The vertices + edges are accurate. The positions are randomly generated.
+In addition, only the initial graph is shown, not the final graph**
